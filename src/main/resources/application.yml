@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+
+spring:
+  profiles: dev
+
+server:
+  port: 9090
+
+#debug: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
